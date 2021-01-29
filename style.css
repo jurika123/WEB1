@@ -1,0 +1,47 @@
+body{
+     margin:0;
+   }
+   a {
+     color:black;
+     text-decoration: none;
+   }
+   h1 {
+     font-size:45px;
+     text-align: center;
+     border-bottom:1px solid gray;
+     margin:0;
+     padding:20px;
+   }
+   ol{
+     border-right:1px solid gray;
+     width:100px;/*ol태그와 border-right의 폭을 줄여준다.*/
+     margin:0;
+     padding:10px;
+   }
+
+  #grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+
+  #grid ol { /*grid라는 id값의 태그밑에 있는 ol태그
+              웹 페이지에 있는 모든 ol중에 부모가 grid인 선택자.*/
+    padding-left: 33px;
+  }
+
+  #grid #articlce { /*id값을 주었기때문에 grid부모는 필요없지만 명확하게 하고싶으면 넣어도 된다.*/
+    padding-left: 25px;
+  }
+
+  /*screen width < 800px 스크린의 픽셀이 800보다 작을때*/
+  @media(max-width:800px){
+      #grid {
+        display: block; /*800px보다 화면의 크기가 작을때 id값이 grid인 태그의 display가 block으로 바뀐다.*/
+    }
+    ol{
+      border-right:none;
+    }
+    h1 {
+      border-bottom: none;
+    }
+  }

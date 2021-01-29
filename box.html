@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      /*화면 전체를 쓰는 태그들을 블럭이라고 부른다.
+      block level element*/
+      h1/*,a*/{
+      /*  border-width : 5px;
+        border-color : red;
+        border-style : solid;*/
+
+        border: 5px solid red; /*위와 같다.*/
+        padding : 5px; /*상하좌우 5px만큼 여백을 준다. 겨울에 입는 패딩이라고 쉽게 생각!*/
+        margin : 3px; /*테두리와 테두리 사이에 간격이 ~px,%,0만큼 줄어든다. 장사할때 마진이 남는다고 쉽게 생각!*/
+        display : block;/*h1이라는 태그는 박스모델상 block level element는것이 생략되어 있다는 상. 화면 전체를 쓴다는 특징이 있다.*/
+
+        /*화면 전체를 쓰는 block level element의 특징을 바꾸고싶으면*/
+        width : 100px;/*폭을 100px의 크기로 바꾼다.
+                      element(태그)의 크기가 변경된다.*/
+
+                      /*높이는 height*/
+      }
+
+      /*자기 자신의 부피(컨텐트만큼 크기를 가지는 태그를
+      inline element라고 한다.
+      a {
+        border-width : 5px;
+        border-color : red;
+        border-style : solid;
+     display : block; 부피 높이에 대한 전체라인을 블럭시킨다.*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>러브라이브 선샤인</h1><!--제목태그는 화면 전체를 쓰는것이 기본적으로 편리하기 떄문.-->
+  <!--<a href="https://www.naver.com/">러브라이브!</a>링크는 자기 컨텐트만큼 공간을 쓴다.-->
+    <h1>러브라이브 선샤인</h1>
+  </body>
+</html>

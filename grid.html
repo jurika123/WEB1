@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #grid {
+        border: 10px solid pink;
+      }
+      div {
+        border : 10px solid gray;
+        display: grid; /*             ┌ARTICLE의 크기는 1fr로 고정하는대신 화면의 크기에따라 늘어난다.*/
+        grid-template-columns: 150px 1fr;/*화면 전체를 자동으로 조절하게 되는 단위 : fr*/
+        /*                     └NAVIGATION의 넓이 150px고정 */
+        /*fr의 컨텐츠 크기만큼 px의 크기도 같이 커진다.*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid"> <!--부모 태그를 만든다. 디자인의 목적으로 만든 태그.-->
+      <diV>NAVIGATION</div>
+      <div>ARTICLE</div> <!--디자인의 용도로만 쓰이는 태그.화면 전체를 쓰는 태그들을 블럭이라고 부른다.
+      div태그는 기본적으로 block level element이기 때문 화면전체를 써서 줄바꿈이 된다.-->
+    </div>
+
+
+  <!-- <span>NAVIGATION</span>
+    <span>ARTICLE</span>inline element. 자기 자신의 부피(컨텐트만큼 크기를 가지는 태그)다.-->
+  </body>
+</html>
